@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hesap makinesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="Answer">
+                <input id="input" type="text" placeholder="0" readonly>
+            </div>
+            <div class="operations">
+                <button onclick="elementClick('AC')">AC</button>
+                <button onclick="elementClick('+/-')">+/-</button>
+                <button onclick="elementClick('%')">%</button>
+            </div>
+            <div class="rowContainer">
+                <div class="Numbers">
+                    <button onclick="Numberclick(9)">9</button>
+                    <button onclick="Numberclick(8)">8</button>
+                    <button onclick="Numberclick(7)">7</button>
+                    <button onclick="Numberclick(6)">6</button>
+                    <button onclick="Numberclick(5)">5</button>
+                    <button onclick="Numberclick(4)">4</button>
+                    <button onclick="Numberclick(3)">3</button>
+                    <button onclick="Numberclick(2)">2</button>
+                    <button onclick="Numberclick(1)">1</button>
+                    <button onclick="Numberclick(0)" style="width:120px">0</button>
+                    <button onclick="elementClick('.')">.</button>
+                </div>
+                <div class="transactions">
+                    <button onclick="transactionsCilick('/')">/</button>
+                    <button onclick="transactionsCilick('*')">x</button>
+                    <button onclick="transactionsCilick('-')">-</button>
+                    <button onclick="transactionsCilick('+')">+</button>
+                    <button onclick="transactionsCilick('=')">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
